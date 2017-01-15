@@ -12,6 +12,17 @@ Creates a new LinkedList, with the optional parameter used as the head value of 
 LinkedList.create(); LinkedList { head: null }
 LinkedList.create('foo'); // LinkedList { head: { data: 'foo', next: null } }
 ```
+
+**LinkedList.fromArray(array)**
+
+Creates a new LinkedList with the array values provided.
+
+```
+let list = LinkedList.fromArray(['a', 'b']);
+list.at(0); // 'a'
+list.at(1); // 'b'
+```
+
 *Members*
 
 **length()**
