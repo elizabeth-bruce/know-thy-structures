@@ -1,0 +1,23 @@
+{
+  "name": "know-thy-structures",
+  "version": "0.1.0",
+  "description": "Implementation of several simple data structures in JS.",
+  "main": "linked-list.js",
+  "scripts": {
+    "lint": "node_modules/.bin/jshint lib/* spec/**/*",
+    "test": "node_modules/.bin/jasmine"
+  },
+  "keywords": [
+    "linked-list",
+    "tutorial"
+  ],
+  "author": "elizabeth-bruce",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "jasmine": "^2.5.2",
+    "jshint": "^2.9.4"
+  }
+}
