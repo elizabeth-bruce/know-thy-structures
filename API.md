@@ -89,3 +89,73 @@ list.push('baz');
 
 list.at(1); // 'bar'
 ```
+
+####Min Heaps
+
+*Static Methods*
+
+**MinHeap.create()**
+
+Creates a new, empty min heap.
+
+```
+let heap = MinHeap.create();
+heap; // MinHeap { heap: [] }
+```
+
+_Members_
+
+**size()**
+
+Returns the number of elements in the heap.
+
+```
+let heap = MinHeap.create();
+heap.insert(1);
+heap.insert(2);
+
+heap.size(); // 2
+```
+
+**toArray()**
+
+Returns the array representation of the heap.
+
+```
+let heap = MinHeap.create();
+
+heap.insert(3);
+heap.insert(2);
+heap.insert(1);
+heap.insert(5);
+
+heap.toArray(); // [ 1, 3, 2, 5 ]
+```
+
+**insert(el)**
+
+Inserts an element into the heap.
+
+```
+let heap = MinHeap.create();
+
+heap.insert(3);
+
+heap.toArray(); // [3]
+```
+
+**extractMinimum()**
+
+Removes the minimum element of the array, rebalances the heap, and returns the removed element.
+
+```
+let heap = MinHeap.create();
+
+heap.insert(3);
+heap.insert(1);
+heap.insert(2);
+
+heap.extractMinimum(); // 1
+
+heap.toArray() // [2,3]
+```

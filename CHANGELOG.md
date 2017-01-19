@@ -1,5 +1,9 @@
 #Change Log
 
+**0.2.0**
+
+Added basic implementation of min-heaps.
+
 **0.1.1**
 
 Implemented double linkage and tail caching in `LinkedList`, added `LinkedList.fromArray`.

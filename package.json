@@ -1,6 +1,6 @@
 {
   "name": "know-thy-structures",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Implementation of several simple data structures in JS.",
   "main": "linked-list.js",
   "scripts": {
