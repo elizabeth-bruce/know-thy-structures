@@ -159,3 +159,58 @@ heap.extractMinimum(); // 1
 
 heap.toArray() // [2,3]
 ```
+
+####Tries
+
+*Static Methods*
+
+**Trie.create()**
+
+Creates an empty trie.
+
+```
+let trie = Trie.create(); // Trie {}
+```
+
+_Members_
+
+**addString(string)**
+
+Adds a string to the trie.
+
+```
+let trie = Trie.create();
+
+trie.addString('abc');
+
+trie.getStrings(); // ['abc']
+```
+
+**hasString(string)**
+
+Returns whether the given string has been registered in the trie.
+
+```
+let trie = Trie.create();
+
+trie.addString('abc');
+
+trie.hasString('abc'); // true
+trie.hasString('ab'); // false
+trie.hasString('def'); // false
+```
+
+**getStrings()**
+
+Returns the full list of strings registered in the trie.
+
+```
+let trie = Trie.create();
+
+trie.addString('abc');
+trie.addString('def');
+trie.addString('ab');
+trie.addString('ghi');
+
+trie.getStrings(); // ['abc', 'ab', 'def', 'ghi']
+```

@@ -1,5 +1,9 @@
 #Change Log
 
+**0.3.0**
+
+Added basic trie implementation, minor test repo updates.
+
 **0.2.0**
 
 Added basic implementation of min-heaps.

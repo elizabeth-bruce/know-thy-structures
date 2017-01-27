@@ -56,7 +56,7 @@ describe('#extractMinimum', function() {
     describe('the heap is empty', function() {
         it('returns null', function() {
             let heap = MinHeap.create();
-            expect(heap.extractMinimum()).toBe(null);
+            expect(heap.extractMinimum()).toBeNull();
         });
     });
 });

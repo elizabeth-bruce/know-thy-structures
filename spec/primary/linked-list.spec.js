@@ -13,8 +13,8 @@ describe('.create', function() {
     describe('no init value is provided', function() {
         it('creates a linked list with a null value as the first node', function() {
             const list = LinkedList.create();
-            expect(list.head).toBe(null);
-            expect(list.tail).toBe(null);
+            expect(list.head).toBeNull();
+            expect(list.tail).toBeNull();
         });
     });
 });
