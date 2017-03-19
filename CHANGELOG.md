@@ -1,5 +1,9 @@
 #Change Log
 
+**0.4.0**
+
+Added basic support for hash tables.
+
 **0.3.1**
 
 Added `LinkedList.indexOf`, cleaned up documentation & fixed incorrect `package.json` entry.

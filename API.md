@@ -217,3 +217,42 @@ trie.addString('ghi');
 
 trie.getStrings(); // ['abc', 'ab', 'def', 'ghi']
 ```
+
+#### HashTables
+
+*Static Methods*
+
+**HashTable.create()**
+
+Creates a new, empty hash table.
+
+```
+HashTable.create(); // HashTable {}
+```
+
+_Members_
+
+**set(key, value)**
+
+Sets the specified hash key to a given value and returns the value.
+
+- This overwrites the preexisting value at the hash key if one existed before.
+- Valid keys are UTF-8 strings. Other types, including objects, arrays, and primitives, may not be used.
+- Any value may be stored in a HashTable value.
+
+```
+let hash = HashTable.create();
+
+hash.set('a', 'b'); // 'b'
+```
+
+**get(key)**
+
+Retrieves the specified value at `key`, or returns `undefined` if the key does not exist in the hash table.
+
+```
+let hash = HashTable.create();
+
+hash.set('a', 'b');
+hash.get('a'); // 'b' 
+```
