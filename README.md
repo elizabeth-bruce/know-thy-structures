@@ -1,8 +1,8 @@
-#Data Structures in ES6
+# Data Structures in ES6
 
 This is a personal project to better understand several common data structures by implementing them in ES6; while this library is intended for purely personal use, please feel free to use it without restriction.
 
-##Getting Started
+## Getting Started
 
 First install via `npm`:
 ```
@@ -21,6 +21,6 @@ list.push('b');
 list.at(1); // 'b'
 ```
 
-##API
+## API
 
 See the [API doc](API.md) for the full API.

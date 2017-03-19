@@ -137,6 +137,26 @@ describe('#removeIndex', function() {
     });
 });
 
+describe('#indexOf', function() {
+    describe('the element is not in the linked list', function() {
+        it('returns -1', function() {
+            let list = LinkedList.create();
+            list.push('a');
+
+            expect(list.indexOf('b')).toEqual(-1);
+        });
+    });
+    describe('the element is in the linked list', function() {
+        it('returns the index of the first occurrence of the element in the list', function() {
+            let list = LinkedList.fromArray(['a', 'b', 'c']);
+            expect(list.indexOf('b')).toEqual(1);
+
+            let otherList = LinkedList.fromArray(['a', 'b', 'c', 'c']);
+            expect(otherList.indexOf('c')).toEqual(2);
+        });
+    });
+});
+
 describe('#at', function() {
     describe('no index or an invalid index is provided', function() {
         it('throws an error', function() {

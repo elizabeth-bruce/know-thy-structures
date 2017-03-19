@@ -1,6 +1,6 @@
 # API Documentation
 
-####Linked Lists
+#### Linked Lists
 
 *Static Methods*
 
@@ -55,9 +55,7 @@ list.pop(); // 'foo';
 Removes the first occurrence of the provided argument from the list and returns the index of the element removed, or -1 if no element was found.
 
 ```
-let list = LinkedList.create('foo');
-list.push('bar');
-list.push('baz');
+let list = LinkedList.fromArray(['foo', 'bar', 'baz']);
 
 list.removeValue('bar'); // 1
 list.length(); // 2
@@ -69,9 +67,7 @@ list.at(1); // 'baz'
 Removes the element at the index specified by the provided argument and returns that element, or -1 if the list did not contain that index.
 
 ```
-let list = LinkedList.create('foo');
-list.push('bar');
-list.push('baz');
+let list = LinkedList.fromArray(['foo', 'bar', 'baz']);
 
 list.removeIndex(1); // 1
 list.length(); // 2
@@ -83,14 +79,21 @@ list.at(1); // 'baz'
 Returns the element at the index specified, or `null` if the list did not contain that index.
 
 ```
-let list = LinkedList.create('foo');
-list.push('bar');
-list.push('baz');
+let list = LinkedList.fromArray(['foo', 'bar', 'baz']);
 
 list.at(1); // 'bar'
 ```
 
-####Min Heaps
+**indexOf(idx)**
+
+Returns the index of the first occurrence of the element in the list, or `-1` if the list did not contain that element.
+
+```
+let list = LinkedList.fromArray(['a','b','c']);
+
+list.indexOf('b'); // -1
+```
+#### Min Heaps
 
 *Static Methods*
 
@@ -160,7 +163,7 @@ heap.extractMinimum(); // 1
 heap.toArray() // [2,3]
 ```
 
-####Tries
+#### Tries
 
 *Static Methods*
 

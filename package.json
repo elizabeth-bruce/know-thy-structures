@@ -1,8 +1,8 @@
 {
   "name": "know-thy-structures",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Implementation of several simple data structures in JS.",
-  "main": "linked-list.js",
+  "main": "lib/index.js",
   "scripts": {
     "lint": "node_modules/.bin/jshint lib/* spec/**/*",
     "test": "node_modules/.bin/jasmine"

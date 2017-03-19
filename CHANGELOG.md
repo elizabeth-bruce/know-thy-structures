@@ -1,5 +1,9 @@
 #Change Log
 
+**0.3.1**
+
+Added `LinkedList.indexOf`, cleaned up documentation & fixed incorrect `package.json` entry.
+
 **0.3.0**
 
 Added basic trie implementation, minor test repo updates.
